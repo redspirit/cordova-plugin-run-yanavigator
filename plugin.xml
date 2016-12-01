@@ -1,7 +1,22 @@
 <?xml version='1.0' encoding='utf-8'?>
-<plugin id="com.guardia.yanavigator" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
-    <name>cordova-plugin-run-yanavigator</name>
-    <js-module name="cordova-plugin-run-yanavigator" src="www/cordova-plugin-run-yanavigator.js">
-        <clobbers target="cordova.plugins.cordova-plugin-run-yanavigator" />
+<plugin id="cordova-plugin-run-yanavigator" version="0.1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>Launch Yandex navigator</name>
+    <engines>
+        <engine name="cordova" version="&gt;=3.0.0" />
+    </engines>
+    <js-module name="YaNavigator" src="www/yanavigator.js">
+        <clobbers target="cordova.plugins.yanavigator" />
     </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="YaNavigator">
+                <param name="android-package" value="com.guardia.yanavigator.YaNavigator" />
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml">
+
+        </config-file>
+        <source-file src="src/android/YaNavigator.java" target-dir="src/com/guardia/yanavigator"/>
+    </platform>
 </plugin>
