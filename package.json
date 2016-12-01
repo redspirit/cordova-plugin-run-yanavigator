@@ -1,0 +1,31 @@
+{
+  "name": "cordova-plugin-run-yanavigator",
+  "version": "0.1.0",
+  "description": "",
+  "cordova": {
+    "id": "cordova-plugin-run-yanavigator",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://redspirit@github.com/redspirit/cordova-plugin-run-yanavigator.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    }
+  ],
+  "author": "RedSpirit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redspirit/cordova-plugin-run-yanavigator/issues"
+  },
+  "homepage": "https://github.com/redspirit/cordova-plugin-run-yanavigator#readme"
+}
