@@ -1,7 +1,7 @@
 {
   "name": "cordova-plugin-run-yanavigator",
   "version": "0.1.0",
-  "description": "",
+  "description": "Cordova plugin for launch Yandex navigator for Android",
   "cordova": {
     "id": "cordova-plugin-run-yanavigator",
     "platforms": [
